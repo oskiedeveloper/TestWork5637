@@ -1,0 +1,151 @@
+/* 
+Theme Name:		 Storefront Child
+Theme URI:		 http://childtheme-generator.com/
+Description:	 Storefront Child is a child theme of Storefront, created by ChildTheme-Generator.com
+Author:			 oskie villarin
+Author URI:		 http://childtheme-generator.com/
+Template:		 storefront
+Version:		 1.0.0
+Text Domain:	 storefront-child
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+.home.page:not(.page-template-template-homepage) .site-header {
+    margin-bottom: 0px;
+}
+
+.widget-city {
+    max-width: 360px;
+}
+.city-wrap {
+    padding: 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.05);
+}
+.city-info h3 {
+    font-weight: 700;
+    color: #111;
+    font-size: 26px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.city-info p {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.city-info .text {
+    opacity: .9;
+    font-size: 15px;
+    line-height: 1.4;
+    padding-bottom: 15px;
+    font-size: 300;
+}
+.city-banner {
+    min-height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 20px;
+}
+
+.header-widget-region .col-full {
+    padding: 30px 0;
+    display: flex;
+    gap: 30px;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container-wrap {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-header h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #EEEEEE;
+}
+
+.table-header {
+  display: flex;
+  width: 100%;
+  background: #000;
+  padding: 18px 0;
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+  padding: 18px 0;
+}
+.table-row:nth-of-type(odd) {
+  background: #EEEEEE;
+}
+
+.table-data, .header__item {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.header__item {
+  text-transform: uppercase;
+}
+
+.filter__link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.filter__link::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filter__link.desc::after {
+  content: "(desc)";
+}
+.filter__link.asc::after {
+  content: "(asc)";
+}
